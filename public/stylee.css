@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: white; */
+    color: #EB0B00 !important;
+}
+body{
+    display: flex  !important;
+    justify-content: center  !important;
+    align-items: center  !important;
+    width: 100%  !important;
+}
+.container {
+    width: 60% !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70% !important;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* border-radius: 54px;
+    box-shadow: 8px 8px 16px #EB0B00,inset 4px 4px 10px #EB0B00; */
+    border-radius: 43px;
+background: linear-gradient(315deg, #e6e6e6, #ffffff);
+box-shadow:  -11px -11px 58px #e3e3e3,
+             11px 11px 58px #ffffff;
+}
+.btn-primary {
+    background-color: #EB0B00 !important;
+    color: #ffffff !important;
+    width: 100px;
+    border-radius: 10px !important;
+}
+.btn{   
+    display: flex !important;
+    justify-content: center !important;
+}
+.error-box{
+    border-radius: 10px !important;
+    width: 100%;
+    padding: 10px;
+    background-color: #EB0B00 !important;
+}
+#err{
+    color: #ffffff !important;
+    text-align: center;
+}
+button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    margin-top: -10px !important;
+    -webkit-appearance: button;
+}
+.procontainer{
+    display: flex;
+    justify-content: center;
+    background-color: thistle;
+}
+.navbar {
+    box-shadow: 2px 2px 4px grey;
+}
+.addproduct{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 40px ;
+}
+#addproduct{
+    background-color: gray;
+    margin-bottom: 200px;
+}
+.productcontainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+    margin-top: 50px;
+    background-color:transparent ;
+    box-shadow: 4px 4px 8px #EB0B00 ;
+    padding: 50px;
+}
+#caard{
+    margin-top: 50px !important;
+}
+.arrow{
+    margin: 0px 0px 30px 30px;
+}
+.ownersignup{
+    border-radius: 10px !important;
+    width: 100%;
+    padding: 10px;
+    background-color: #EB0B00 !important;
+    margin-bottom: 30px;   
+    display: flex;
+    justify-content: space-around;   
+}
+#singuplink{
+    color: #ffffff !important;
+    text-align: center;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;   
+}
+@media (max-width: 992px){
+    .arrow{
+        margin: 0px 0px 50px 10px;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/r-place-restaurant.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- forms -->
+    <div class="container">
+        <div class="arrow">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a> 
+        </div>
+        <div class="heading">
+            <h2>User Login</h2>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="useremail" placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="userpassword" placeholder="Enter Your Password">
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="submit" onclick="userlogin()" class="btn btn-primary">Login</button>
+        </div>
+        <div class="login-link">
+            <p>Dont have an account?<a href="usersignup.html"> <b>User  Signup</b></a></p>
+        </div>
+    </div>
+
+    <!-- Form Complete -->
+
+
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyA76aU7pT6nf-Ncr9NGwdyvNNMC2KNq4yE",
+                authDomain: "ecmascript-9dc60.firebaseapp.com",
+                projectId: "ecmascript-9dc60",
+                storageBucket: "ecmascript-9dc60.appspot.com",
+                messagingSenderId: "361936735525",
+                appId: "1:361936735525:web:0df2846d32abd6213e9ecc",
+                measurementId: "G-X0LM5PS1KZ"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

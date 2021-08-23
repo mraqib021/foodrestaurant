@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/r-place-restaurant.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img width="80px" src="images/r-place-restaurant.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-design" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="profile.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Myproduct.html"><b>My Products</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Order.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=""><button onclick="logout()">Logout</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar Complete -->
+
+
+    <!-- <div class="procontainer">
+        <div class="contain">
+            <h2 id="profile">profile</h2>
+            <div class="text"> -->
+    <!-- <img  id="userprofile" src="../images/" height="200px" alt=""> -->
+    <!-- <h1 id="retaurantname"></h1>
+                <h2 id="fname"></h2>
+                <h2 id="email1"></h2>
+                <h2 id="country"></h2>
+                <h2 id="city"></h2>
+            </div>
+        </div> -->
+
+
+    <div id="cards" class="productcontainer" style="display: none;">
+    </div>
+
+    <!-- modal -->
+    <!-- Button trigger modal -->
+
+
+    <div class="addproduct">
+        <button type="button" data-toggle="modal" id="addproduct" data-target="#exampleModalCenter">Add
+            Products</button>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA76aU7pT6nf-Ncr9NGwdyvNNMC2KNq4yE",
+            authDomain: "ecmascript-9dc60.firebaseapp.com",
+            projectId: "ecmascript-9dc60",
+            storageBucket: "ecmascript-9dc60.appspot.com",
+            messagingSenderId: "361936735525",
+            appId: "1:361936735525:web:0df2846d32abd6213e9ecc",
+            measurementId: "G-X0LM5PS1KZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+
+
+
+    <script src="profile.js"></script>
+</body>
+
+</html>
